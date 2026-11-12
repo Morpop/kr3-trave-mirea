@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Каталог авторских и классических туров по России от агентства TraveMirea.">
+  <title>Каталог туров: TraveMirea</title>
+  <script>document.documentElement.dataset.theme=localStorage.getItem('travemirea-theme')||'light';</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body id="top">
+  <a class="skip-link" href="#main-content">Перейти к основному содержимому</a>
+
+  <header class="site-header py-3">
+    <div class="container">
+      <div class="site-header__inner d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2">
+        <a class="site-brand text-decoration-none" href="index.html">
+          <img class="site-logo" src="images/trave-logo.svg" alt="" width="48" height="48" aria-hidden="true">
+          TraveMirea
+        </a>
+        <p class="site-header__tagline mb-0 fw-semibold">Туристическое агентство · ежедневно 09:00–21:00</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark site-navbar" aria-label="Основная навигация">
+    <div class="container site-navbar__inner">
+      <a class="navbar-brand navbar-brand--mobile d-lg-none fw-bold" href="index.html">
+        <img class="site-logo site-logo--mobile" src="images/trave-logo.svg" alt="" width="36" height="36" aria-hidden="true">
+        TraveMirea
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" data-nav-toggle aria-controls="mainNavbar" aria-expanded="false" aria-label="Открыть меню">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="catalog.html">Каталог туров</a></li>
+          <li class="nav-item"><a class="nav-link" href="product.html">Байкал</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacts.html">Офисы и контакты</a></li>
+          <li class="nav-item"><a class="nav-link" href="order.html">Бронирование</a></li>
+          <li class="nav-item nav-item--cta ms-lg-2">
+            <button class="btn btn-wave-light" type="button" data-bs-toggle="modal" data-bs-target="#quickOrderModal" data-modal-open="quickOrderModal">Подобрать тур</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content" tabindex="-1">
+    <section class="container page-intro section-space" aria-labelledby="catalog-title">
+      <div class="section-head mb-0">
+        <div>
+          <h1 id="catalog-title">Направления TraveMirea</h1>
+          <p class="section-lead mb-0">Соберите идеальное путешествие: энергия горных вершин, спокойствие северных озёр или тёплый морской берег для всей семьи.</p>
+        </div>
+        <a class="btn btn-wave-primary" href="order.html">Рассчитать стоимость</a>
+      </div>
+    </section>
+
+    <section class="container pb-5" aria-labelledby="filter-title">
+      <div class="alert alert-wave" role="status">
+        <strong>Важно:</strong> в стоимость всех туров уже включены проживание, завтраки, сопровождение гида и трансфер по маршруту.
+      </div>
+      <div class="catalog-toolbar">
+        <div>
+          <h2 class="h3 mb-0" id="filter-title">Выберите формат отдыха</h2>
+        </div>
+        <div class="zone-filter" data-zone-filter role="group" aria-label="Фильтр туров по формату отдыха">
+          <button class="zone-filter__button is-active" type="button" data-filter="all" aria-pressed="true">Все туры</button>
+          <button class="zone-filter__button" type="button" data-filter="family" aria-pressed="false">Семейные</button>
+          <button class="zone-filter__button" type="button" data-filter="active" aria-pressed="false">Активные и горы</button>
+          <button class="zone-filter__button" type="button" data-filter="relax" aria-pressed="false">Море и релакс</button>
+          <button class="zone-filter__button" type="button" data-filter="favorites" aria-pressed="false">Избранное <span class="fav-counter" data-fav-count>0</span></button>
+        </div>
+      </div>
+
+      <div class="catalog-search-bar">
+        <div class="catalog-search-field">
+          <label class="form-label" for="tourSearchInput">Быстрый поиск по направлению или ключевому слову</label>
+          <input class="form-control" type="search" id="tourSearchInput" placeholder="Например: Байкал, море, вулкан, Рускеала..." autocomplete="off">
+        </div>
+        <div class="catalog-sort-field">
+          <label class="form-label" for="tourSortSelect">Сортировка по цене и длительности</label>
+          <select class="form-select" id="tourSortSelect">
+            <option value="default" selected>По популярности (по умолчанию)</option>
+            <option value="price-asc">Сначала дешевле</option>
+            <option value="price-desc">Сначала дороже</option>
+            <option value="days-asc">Короткие поездки (от 4 дней)</option>
+          </select>
+        </div>
+      </div>
+
+      <p class="alert alert-wave d-none" id="catalogEmptyNotice" role="status">
+        По вашему запросу туры не найдены. Попробуйте сбросить фильтр или изменить поисковый запрос.
+      </p>
+
+      <div class="cards-grid" data-zone-grid>
+        <div class="zone-card-wrap" data-moods="family relax active" data-tour-id="baikal" data-price="48500" data-days="6">
+          <article class="zone-card">
+            <img class="zone-image" src="images/tour-baikal-800.jpg" srcset="images/tour-baikal-480.jpg 480w, images/tour-baikal-800.jpg 800w, images/tour-baikal-1200.jpg 1200w" sizes="(max-width: 767px) 92vw, (max-width: 1023px) 46vw, 380px" alt="Берег озера Байкал и остров Ольхон" width="800" height="480" loading="lazy">
+            <div class="card-body">
+              <div class="card-top-row">
+                <span class="badge badge-blue">Семейный · релакс</span>
+                <button class="fav-btn" type="button" data-fav-btn="baikal" aria-pressed="false" aria-label="Добавить тур Сердце Байкала в избранное" title="В избранное">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.33-8.18C.8 10.1 1.4 6.3 4.4 4.55a5.35 5.35 0 0 1 7.6 1.2 5.35 5.35 0 0 1 7.6-1.2c3 1.75 3.6 5.55 1.73 8.27C18.7 16.65 12 21 12 21Z"/></svg>
+                </button>
+              </div>
+              <h3 class="h4">Сердце Байкала и Ольхон</h3>
+              <p class="card-text">Круиз по Малому морю, бухта Песчаная, этнопарк и панорамный эко-отель у воды.</p>
+              <p class="zone-meta">6 дней / 5 ночей · от 48 500 ₽</p>
+              <a class="btn btn-wave-primary" href="product.html">Подробнее</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="zone-card-wrap" data-moods="active" data-tour-id="altai" data-price="54000" data-days="7">
+          <article class="zone-card">
+            <img class="zone-image" src="images/tour-altai-800.jpg" srcset="images/tour-altai-480.jpg 480w, images/tour-altai-800.jpg 800w, images/tour-altai-1200.jpg 1200w" sizes="(max-width: 767px) 92vw, (max-width: 1023px) 46vw, 380px" alt="Горные хребты и долина реки Катунь на Алтае" width="800" height="480" loading="lazy">
+            <div class="card-body">
+              <div class="card-top-row">
+                <span class="badge badge-orange">Активные и горы</span>
+                <button class="fav-btn" type="button" data-fav-btn="altai" aria-pressed="false" aria-label="Добавить тур Золотое кольцо Алтая в избранное" title="В избранное">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.33-8.18C.8 10.1 1.4 6.3 4.4 4.55a5.35 5.35 0 0 1 7.6 1.2 5.35 5.35 0 0 1 7.6-1.2c3 1.75 3.6 5.55 1.73 8.27C18.7 16.65 12 21 12 21Z"/></svg>
+                </button>
+              </div>
+              <h3 class="h4">Золотое кольцо Алтая</h3>
+              <p class="card-text">Чуйский тракт, Телецкое озеро, Гейзерное озеро и радиальные выходы в предгорья Белухи.</p>
+              <p class="zone-meta">7 дней / 6 ночей · от 54 000 ₽</p>
+              <a class="btn btn-wave-outline" href="product.html">Подробнее</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="zone-card-wrap" data-moods="family relax" data-tour-id="sochi" data-price="39000" data-days="5">
+          <article class="zone-card">
+            <img class="zone-image" src="images/tour-sochi-800.jpg" srcset="images/tour-sochi-480.jpg 480w, images/tour-sochi-800.jpg 800w, images/tour-sochi-1200.jpg 1200w" sizes="(max-width: 767px) 92vw, (max-width: 1023px) 46vw, 380px" alt="Морское побережье Сочи и набережная на закате" width="800" height="480" loading="lazy">
+            <div class="card-body">
+              <div class="card-top-row">
+                <span class="badge badge-family">Семейные</span>
+                <button class="fav-btn" type="button" data-fav-btn="sochi" aria-pressed="false" aria-label="Добавить тур Сочи и Красная Поляна в избранное" title="В избранное">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.33-8.18C.8 10.1 1.4 6.3 4.4 4.55a5.35 5.35 0 0 1 7.6 1.2 5.35 5.35 0 0 1 7.6-1.2c3 1.75 3.6 5.55 1.73 8.27C18.7 16.65 12 21 12 21Z"/></svg>
+                </button>
+              </div>
+              <h3 class="h4">Сочи и Красная Поляна</h3>
+              <p class="card-text">Олимпийский парк, подъём на Роза Пик, тисо-самшитовая роща и отдых у тёплого моря.</p>
+              <p class="zone-meta">5 дней / 4 ночи · от 39 000 ₽</p>
+              <a class="btn btn-wave-outline" href="order.html?tour=sochi">Забронировать</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="zone-card-wrap" data-moods="relax family" data-tour-id="karelia" data-price="32000" data-days="4">
+          <article class="zone-card">
+            <img class="zone-image" src="images/tour-karelia-800.jpg" srcset="images/tour-karelia-480.jpg 480w, images/tour-karelia-800.jpg 800w, images/tour-karelia-1200.jpg 1200w" sizes="(max-width: 767px) 92vw, (max-width: 1023px) 46vw, 380px" alt="Лесное озеро и гранитные скалы Карелии" width="800" height="480" loading="lazy">
+            <div class="card-body">
+              <div class="card-top-row">
+                <span class="badge badge-gold">Море и релакс</span>
+                <button class="fav-btn" type="button" data-fav-btn="karelia" aria-pressed="false" aria-label="Добавить тур Карелия: Рускеала и шхеры в избранное" title="В избранное">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.33-8.18C.8 10.1 1.4 6.3 4.4 4.55a5.35 5.35 0 0 1 7.6 1.2 5.35 5.35 0 0 1 7.6-1.2c3 1.75 3.6 5.55 1.73 8.27C18.7 16.65 12 21 12 21Z"/></svg>
+                </button>
+              </div>
+              <h3 class="h4">Карелия: Рускеала и шхеры</h3>
+              <p class="card-text">Мраморный каньон, ретропоезд, прогулка по Ладожским шхерам и отдых в глэмпинге в сосновом бору.</p>
+              <p class="zone-meta">4 дня / 3 ночи · от 32 000 ₽</p>
+              <a class="btn btn-wave-outline" href="order.html?tour=karelia">Забронировать</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="zone-card-wrap" data-moods="active" data-tour-id="kamchatka" data-price="89000" data-days="8">
+          <article class="zone-card">
+            <img class="zone-image" src="images/tour-kamchatka-800.jpg" srcset="images/tour-kamchatka-480.jpg 480w, images/tour-kamchatka-800.jpg 800w, images/tour-kamchatka-1200.jpg 1200w" sizes="(max-width: 767px) 92vw, (max-width: 1023px) 46vw, 380px" alt="Заснеженный вулкан Камчатки на фоне чистого неба" width="800" height="480" loading="lazy">
+            <div class="card-body">
+              <div class="card-top-row">
+                <span class="badge badge-orange">Экспедиция</span>
+                <button class="fav-btn" type="button" data-fav-btn="kamchatka" aria-pressed="false" aria-label="Добавить тур Вулканы и океан Камчатки в избранное" title="В избранное">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.33-8.18C.8 10.1 1.4 6.3 4.4 4.55a5.35 5.35 0 0 1 7.6 1.2 5.35 5.35 0 0 1 7.6-1.2c3 1.75 3.6 5.55 1.73 8.27C18.7 16.65 12 21 12 21Z"/></svg>
+                </button>
+              </div>
+              <h3 class="h4">Вулканы и океан Камчатки</h3>
+              <p class="card-text">Халактырский пляж, Авачинская бухта, термальные источники и джип-тур к подножию вулканов.</p>
+              <p class="zone-meta">8 дней / 7 ночей · от 89 000 ₽</p>
+              <a class="btn btn-wave-outline" href="order.html?tour=kamchatka">Забронировать</a>
+            </div>
+          </article>
+        </div>
+
+        <div data-promo-card>
+          <article class="zone-card zone-card--ticket">
+            <div class="card-body">
+              <span class="badge badge-orange">Спецпредложение</span>
+              <h3 class="h4">Семейный и групповой пакет</h3>
+              <p class="card-text">Два взрослых и один детский тур или студенческая группа от 3 человек со скидкой 10% и индивидуальным трансфером.</p>
+              <p class="ticket-price mb-4">Выгода до 15 000 ₽</p>
+              <button class="btn btn-wave-outline" type="button" data-bs-toggle="modal" data-bs-target="#quickOrderModal" data-modal-open="quickOrderModal">Оставить заявку</button>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <article class="zone-map-card" aria-labelledby="zone-map-title">
+        <div class="zone-map-card__header">
+          <div>
+            <p class="zone-map-card__eyebrow mb-2">Карта направлений TraveMirea</p>
+            <h2 class="h3 mb-2" id="zone-map-title">Все маршруты на одной схеме</h2>
+            <p class="mb-0">Посмотрите ключевые точки отправления, курортные зоны и экспедиционные базы TraveMirea по всей России.</p>
+          </div>
+          <a class="btn btn-wave-outline" href="images/route-map.svg" target="_blank" rel="noopener">Открыть крупнее</a>
+        </div>
+        <div class="zone-map-card__body">
+          <a class="zone-map-card__image-link" href="images/route-map.svg" target="_blank" rel="noopener" aria-label="Открыть карту маршрутов TraveMirea в полном размере">
+            <img class="zone-map-card__image" src="images/route-map.svg" alt="Иллюстрированная карта России с двенадцатью пронумерованными туристическими маршрутами TraveMirea" width="1200" height="760" loading="lazy">
+          </a>
+          <div class="zone-map-legend" aria-label="Расшифровка номеров на карте маршрутов">
+            <h3 class="h5 mb-3">Что обозначают номера</h3>
+            <ol class="zone-map-legend__list">
+              <li><span>1</span><div><strong>Москва (Главный хаб)</strong><small>Офис и точка вылета</small></div></li>
+              <li><span>2</span><div><strong>Карелия и Ладога</strong><small>Рускеала и шхеры</small></div></li>
+              <li><span>3</span><div><strong>Санкт-Петербург</strong><small>Экскурсионные туры</small></div></li>
+              <li><span>4</span><div><strong>Золотое кольцо</strong><small>Уикенд-маршруты</small></div></li>
+              <li><span>5</span><div><strong>Казань и Поволжье</strong><small>Гастрономические туры</small></div></li>
+              <li><span>6</span><div><strong>Сочи и Красная Поляна</strong><small>Море и горный курорт</small></div></li>
+              <li><span>7</span><div><strong>Кавказ и Приэльбрусье</strong><small>Панорамные ущелья</small></div></li>
+              <li><span>8</span><div><strong>Калининград и Балтика</strong><small>Куршская коса и Светлогорск</small></div></li>
+              <li><span>9</span><div><strong>Кольский полуостров</strong><small>Териберка и сияние</small></div></li>
+              <li><span>10</span><div><strong>Горный Алтай</strong><small>Чуйский тракт и Катунь</small></div></li>
+              <li><span>11</span><div><strong>Озеро Байкал и Ольхон</strong><small>Флагманский гранд-тур</small></div></li>
+              <li><span>12</span><div><strong>Вулканы Камчатки</strong><small>Тихий океан и гейзеры</small></div></li>
+            </ol>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer py-5 mt-5">
+    <div class="container">
+      <div class="row g-4 footer-grid">
+        <div class="col-12 col-md-6 col-lg-4">
+          <a class="footer-brand" href="index.html">TraveMirea</a>
+          <p class="footer-copy mb-0">Туристическое агентство, где насыщенный отдых легко собрать для каждого.</p>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-2 footer-col--center">
+          <h2 class="h5 mb-3">Навигация</h2>
+          <ul class="list-unstyled footer-links mb-0">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог туров</a></li>
+            <li><a href="product.html">Байкал</a></li>
+            <li><a href="order.html">Бронирование</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 footer-col--center">
+          <h2 class="h5 mb-3">Связь</h2>
+          <address class="footer-copy mb-0">
+            <ul class="list-unstyled footer-contact-list mb-0">
+              <li><a href="tel:+74952150778">📞 +7 (495) 215-07-78</a></li>
+              <li>🕒 Ежедневно, 09:00–21:00</li>
+              <li><a href="mailto:hello@travemirea.ru">✉️ hello@travemirea.ru</a></li>
+            </ul>
+          </address>
+        </div>
+        <div class="col-12 col-lg-3 footer-col--center">
+          <h2 class="h5 mb-3">TraveMirea</h2>
+          <p class="footer-copy mb-0">📍 Москва, проспект Вернадского, 78<br>ООО «ТрейвМирэа Тур»<br>Групповые туры и корпоративные выезды — по предварительной заявке</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="quickOrderModal" tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="quickOrderModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-4" id="quickOrderModalTitle">Быстрая заявка на тур</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" data-modal-close aria-label="Закрыть модальное окно"></button>
+        </div>
+        <form class="quick-order-form" novalidate>
+          <div class="modal-body">
+            <p class="mb-3">Оставьте контакты, мы поможем подобрать оптимальное направление и даты.</p>
+            <div class="mb-3">
+              <label class="form-label" for="quickName">Имя</label>
+              <input class="form-control" id="quickName" name="name" autocomplete="name" required>
+              <div class="invalid-feedback">Пожалуйста, укажите ваше имя.</div>
+            </div>
+            <div>
+              <label class="form-label" for="quickEmail">E-mail</label>
+              <input class="form-control" type="email" id="quickEmail" name="email" autocomplete="email" required>
+              <div class="invalid-feedback">Пожалуйста, введите корректный e-mail.</div>
+            </div>
+            <div class="alert alert-success d-none mt-3 mb-0" role="status">Заявка принята. Спасибо! Наш менеджер скоро свяжется с вами.</div>
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-wave-outline" href="order.html">Полная форма</a>
+            <button class="btn btn-wave-primary" type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

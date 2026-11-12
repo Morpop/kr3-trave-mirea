@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Офисы продаж, контакты и сервисные пакеты туристического агентства TraveMirea.">
+  <title>Офисы и контакты: TraveMirea</title>
+  <script>document.documentElement.dataset.theme=localStorage.getItem('travemirea-theme')||'light';</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body id="top">
+  <a class="skip-link" href="#main-content">Перейти к основному содержимому</a>
+
+  <header class="site-header py-3">
+    <div class="container">
+      <div class="site-header__inner d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2">
+        <a class="site-brand text-decoration-none" href="index.html">
+          <img class="site-logo" src="images/trave-logo.svg" alt="" width="48" height="48" aria-hidden="true">
+          TraveMirea
+        </a>
+        <p class="site-header__tagline mb-0 fw-semibold">Туристическое агентство · ежедневно 09:00–21:00</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark site-navbar" aria-label="Основная навигация">
+    <div class="container site-navbar__inner">
+      <a class="navbar-brand navbar-brand--mobile d-lg-none fw-bold" href="index.html">
+        <img class="site-logo site-logo--mobile" src="images/trave-logo.svg" alt="" width="36" height="36" aria-hidden="true">
+        TraveMirea
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" data-nav-toggle aria-controls="mainNavbar" aria-expanded="false" aria-label="Открыть меню">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог туров</a></li>
+          <li class="nav-item"><a class="nav-link" href="product.html">Байкал</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="contacts.html">Офисы и контакты</a></li>
+          <li class="nav-item"><a class="nav-link" href="order.html">Бронирование</a></li>
+          <li class="nav-item nav-item--cta ms-lg-2">
+            <a class="btn btn-wave-light" href="order.html">Подобрать тур</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content" tabindex="-1">
+    <section class="container section-space" aria-labelledby="contacts-title">
+      <div class="product-hero-grid">
+        <div>
+          <h1 id="contacts-title">Всегда на связи с путешественниками</h1>
+          <p class="section-lead mb-4">Приходите в клиентские офисы TraveMirea в Москве или свяжитесь с персональным координатором онлайн — мы поможем собрать маршрут, подобрать перелёт и оформить страховку.</p>
+          <div class="hero-actions" aria-label="Преимущества клиентского сервиса">
+            <span class="badge badge-family">Поддержка 24/7 в поездке</span>
+            <span class="badge badge-orange">Рядом с кампусом МИРЭА</span>
+            <span class="badge badge-blue">Ежедневно 09:00–21:00</span>
+          </div>
+        </div>
+        <div>
+          <figure class="cafe-photo reveal">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="images/office-moscow-1200.jpg 1200w" sizes="580px">
+              <img src="images/office-moscow-800.jpg" srcset="images/office-moscow-480.jpg 480w, images/office-moscow-800.jpg 800w, images/office-moscow-1200.jpg 1200w" sizes="(max-width: 1023px) 92vw, 580px" alt="Светлый зал клиентского офиса туристического агентства TraveMirea в Москве" width="1200" height="760">
+            </picture>
+            <figcaption>📍 Флагманский офис TraveMirea на проспекте Вернадского, 78</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="container pb-5" aria-labelledby="offices-title">
+      <div class="section-head">
+        <div>
+          <h2 id="offices-title" class="mb-1">Офисы, каналы связи и сервис</h2>
+          <p class="section-lead mb-0">Консультации по турам проводятся в офисе, по телефону и в мессенджерах без выходных.</p>
+        </div>
+        <a class="link-wave" href="order.html">Перейти к калькулятору тура</a>
+      </div>
+
+      <div class="menu-grid">
+        <article class="menu-panel reveal">
+          <div class="menu-panel__head">
+            <h3 class="h4 mb-0">Офисы в Москве</h3>
+            <span class="badge badge-orange">Очно</span>
+          </div>
+          <ul class="menu-list">
+            <li><span>📍 Пр-т Вернадского, 78</span><strong>09:00–21:00</strong></li>
+            <li><span>📍 Ул. Стромынка, 20</span><strong>10:00–20:00</strong></li>
+            <li><span>📍 Малая Пироговская, 1</span><strong>10:00–20:00</strong></li>
+          </ul>
+        </article>
+
+        <article class="menu-panel reveal">
+          <div class="menu-panel__head">
+            <h3 class="h4 mb-0">Связь</h3>
+            <span class="badge badge-family">24/7</span>
+          </div>
+          <ul class="menu-list">
+            <li><span>Телефон</span><strong>📞 +7 (495) 215-07-78</strong></li>
+            <li><span>Время работы</span><strong>🕒 Ежедневно, 09:00–21:00</strong></li>
+            <li><span>Электронная почта</span><strong>✉️ hello@travemirea.ru</strong></li>
+          </ul>
+        </article>
+
+        <article class="menu-panel reveal">
+          <div class="menu-panel__head">
+            <h3 class="h4 mb-0">Сервисные опции</h3>
+            <span class="badge badge-blue">Комфорт</span>
+          </div>
+          <ul class="menu-list">
+            <li><span>Подбор авиа и ж/д билетов</span><strong>0 ₽ к туру</strong></li>
+            <li><span>Страховка активного отдыха</span><strong>1 800 ₽</strong></li>
+            <li><span>Индивидуальный трансфер</span><strong>3 500 ₽</strong></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="container pb-5" aria-labelledby="corp-info-title">
+      <div class="cafe-info reveal">
+        <div>
+          <h2 id="corp-info-title" class="h3 mb-2">Индивидуальные и студенческие выезды под ключ</h2>
+          <p class="mb-0">Организуем групповые поездки для факультетов, студенческих клубов и семейных праздников с персональным гидом и специальным тарифом.</p>
+        </div>
+        <a class="btn btn-wave-primary" href="order.html">Рассчитать поездку</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer py-5 mt-5">
+    <div class="container">
+      <div class="row g-4 footer-grid">
+        <div class="col-12 col-md-6 col-lg-4">
+          <a class="footer-brand" href="index.html">TraveMirea</a>
+          <p class="footer-copy mb-0">Туристическое агентство, где насыщенный отдых легко собрать для каждого.</p>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-2 footer-col--center">
+          <h2 class="h5 mb-3">Навигация</h2>
+          <ul class="list-unstyled footer-links mb-0">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог туров</a></li>
+            <li><a href="product.html">Байкал</a></li>
+            <li><a href="order.html">Бронирование</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 footer-col--center">
+          <h2 class="h5 mb-3">Связь</h2>
+          <address class="footer-copy mb-0">
+            <ul class="list-unstyled footer-contact-list mb-0">
+              <li><a href="tel:+74952150778">📞 +7 (495) 215-07-78</a></li>
+              <li>🕒 Ежедневно, 09:00–21:00</li>
+              <li><a href="mailto:hello@travemirea.ru">✉️ hello@travemirea.ru</a></li>
+            </ul>
+          </address>
+        </div>
+        <div class="col-12 col-lg-3 footer-col--center">
+          <h2 class="h5 mb-3">TraveMirea</h2>
+          <p class="footer-copy mb-0">📍 Москва, проспект Вернадского, 78<br>ООО «ТрейвМирэа Тур»<br>Групповые туры и корпоративные выезды — по предварительной заявке</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

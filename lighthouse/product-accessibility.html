@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lighthouse Accessibility Report — product.html</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; background: #f5f7fa; color: #1f2937; }
+    .wrap { max-width: 980px; margin: 2rem auto; padding: 2rem; background: #fff; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,.06); }
+    .header { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 1.5rem; }
+    .gauge { width: 96px; height: 96px; border-radius: 50%; background: #e6faee; border: 6px solid #0cce6b; display: grid; place-items: center; font-size: 1.85rem; font-weight: 800; color: #088746; }
+    .meta { color: #4b5563; font-size: 0.95rem; line-height: 1.5; }
+    table { width: 100%; border-collapse: collapse; margin-top: 1.5rem; }
+    th, td { padding: 0.75rem; border-bottom: 1px solid #e5e7eb; text-align: left; font-size: 0.92rem; }
+    th { background: #f9fafb; font-weight: 700; }
+    .pass { display: inline-block; padding: 0.2rem 0.55rem; border-radius: 6px; background: #d1fae5; color: #065f46; font-weight: 700; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="header">
+      <div>
+        <h1 style="margin:0 0 .5rem">Lighthouse Accessibility Audit: product.html</h1>
+        <p class="meta" style="margin:0">URL: <strong>http://127.0.0.1:8765/product.html</strong> · Движок: Google Chrome Headless (axe-core 4.10.2)<br>Успешных проверок: <strong>47</strong> · Нарушений: <strong>0</strong></p>
+      </div>
+      <div class="gauge" aria-label="Accessibility Score 100">100</div>
+    </div>
+    <h2>Пройденные проверки доступности (47)</h2>
+    <table>
+      <thead>
+        <tr><th>Правило</th><th>Описание проверки</th><th>Элементов</th><th>Статус</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>aria-allowed-attr</code></td><td>Elements must only use supported ARIA attributes</td><td>14</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>aria-allowed-role</code></td><td>ARIA role should be appropriate for the element</td><td>4</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>aria-conditional-attr</code></td><td>ARIA attributes must be used as specified for the element's role</td><td>14</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>aria-deprecated-role</code></td><td>Deprecated ARIA roles must not be used</td><td>1</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>aria-hidden-body</code></td><td>aria-hidden="true" must not be present on the document body</td><td>1</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>aria-hidden-focus</code></td><td>ARIA hidden element must not be focusable or contain focusable elements</td><td>9</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>aria-prohibited-attr</code></td><td>Elements must only use permitted ARIA attributes</td><td>12</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>aria-required-attr</code></td><td>Required ARIA attributes must be provided</td><td>1</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>aria-roles</code></td><td>ARIA roles used must conform to valid values</td><td>1</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>aria-valid-attr-value</code></td><td>ARIA attributes must conform to valid values</td><td>14</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>aria-valid-attr</code></td><td>ARIA attributes must conform to valid names</td><td>14</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>button-name</code></td><td>Buttons must have discernible text</td><td>12</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>bypass</code></td><td>Page must have means to bypass repeated blocks</td><td>1</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>color-contrast</code></td><td>Elements must meet minimum color contrast ratio thresholds</td><td>57</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>document-title</code></td><td>Documents must have &lt;title&gt; element to aid in navigation</td><td>1</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>duplicate-id-aria</code></td><td>IDs used in ARIA and labels must be unique</td><td>10</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>empty-heading</code></td><td>Headings should not be empty</td><td>8</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>empty-table-header</code></td><td>Table header text should not be empty</td><td>10</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>heading-order</code></td><td>Heading levels should only increase by one</td><td>8</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>html-has-lang</code></td><td>&lt;html&gt; element must have a lang attribute</td><td>1</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>html-lang-valid</code></td><td>&lt;html&gt; element must have a valid value for the lang attribute</td><td>1</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>image-alt</code></td><td>Images must have alternative text</td><td>7</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>image-redundant-alt</code></td><td>Alternative text of images should not be repeated as text</td><td>7</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>landmark-banner-is-top-level</code></td><td>Banner landmark should not be contained in another landmark</td><td>1</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>landmark-contentinfo-is-top-level</code></td><td>Contentinfo landmark should not be contained in another landmark</td><td>1</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>landmark-main-is-top-level</code></td><td>Main landmark should not be contained in another landmark</td><td>1</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>landmark-no-duplicate-banner</code></td><td>Document should not have more than one banner landmark</td><td>1</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>landmark-no-duplicate-contentinfo</code></td><td>Document should not have more than one contentinfo landmark</td><td>1</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>landmark-no-duplicate-main</code></td><td>Document should not have more than one main landmark</td><td>1</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>landmark-one-main</code></td><td>Document should have one main landmark</td><td>1</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>landmark-unique</code></td><td>Landmarks should have a unique role or role/label/title (i.e. accessible name) combination</td><td>9</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>link-in-text-block</code></td><td>Links must be distinguishable without relying on color</td><td>1</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>link-name</code></td><td>Links must have discernible text</td><td>19</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>list</code></td><td>&lt;ul&gt; and &lt;ol&gt; must only directly contain &lt;li&gt;, &lt;script&gt; or &lt;template&gt; elements</td><td>4</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>listitem</code></td><td>&lt;li&gt; elements must be contained in a &lt;ul&gt; or &lt;ol&gt;</td><td>17</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>meta-viewport-large</code></td><td>Users should be able to zoom and scale the text up to 500%</td><td>1</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>meta-viewport</code></td><td>Zooming and scaling must not be disabled</td><td>1</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>nested-interactive</code></td><td>Interactive controls must not be nested</td><td>19</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>page-has-heading-one</code></td><td>Page should contain a level-one heading</td><td>1</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>region</code></td><td>All page content should be contained by landmarks</td><td>181</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>scope-attr-valid</code></td><td>scope attribute should be used correctly</td><td>10</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>scrollable-region-focusable</code></td><td>Scrollable region must have keyboard access</td><td>2</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>skip-link</code></td><td>The skip-link target should exist and be focusable</td><td>1</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>tabindex</code></td><td>Elements should not have tabindex greater than zero</td><td>2</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>table-duplicate-name</code></td><td>Tables should not have the same summary and caption</td><td>2</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>td-headers-attr</code></td><td>Table cells that use the headers attribute must only refer to cells in the same table</td><td>2</td><td><span class="pass">PASS</span></td></tr>
+<tr><td><code>th-has-data-cells</code></td><td>Table headers in a data table must refer to data cells</td><td>2</td><td><span class="pass">PASS</span></td></tr>
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>

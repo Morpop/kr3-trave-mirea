@@ -1,0 +1,364 @@
+/* ==========================================================================
+   TraveMirea — Адаптивные стили (css/responsive.css)
+   Подход Mobile First: от 360px к 430px, 768px, 1024px и 1440px
+   ========================================================================== */
+
+/* 1. Малые мобильные экраны (от 360px) */
+@media (min-width: 360px) {
+  .container {
+    padding-inline: 1rem;
+  }
+
+  .ticket-card {
+    padding: 1.5rem;
+  }
+}
+
+/* 2. Большие мобильные телефоны (от 430px) */
+@media (min-width: 430px) {
+  .container {
+    padding-inline: 1.25rem;
+  }
+
+  .hero-actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .zone-filter {
+    width: fit-content;
+    max-width: 100%;
+    gap: 0.55rem;
+  }
+
+  .restriction-table tbody tr {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .restriction-table td:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .options-checks {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .promo-box {
+    flex-direction: row;
+  }
+
+  .promo-box .btn {
+    flex-shrink: 0;
+  }
+}
+
+/* 3. Планшеты (от 768px) */
+@media (min-width: 768px) {
+  .container {
+    padding-inline: 1.75rem;
+  }
+
+  .section-space {
+    padding-top: 4.25rem;
+  }
+
+  .site-header__inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .section-head {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+
+  .cards-grid,
+  .menu-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+
+  .form-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.15rem;
+  }
+
+  .catalog-search-bar {
+    grid-template-columns: 7fr 5fr;
+    align-items: end;
+    padding: 1.35rem 1.5rem;
+  }
+
+  .checklist-head {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .checklist-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .form-col-full {
+    grid-column: 1 / -1;
+  }
+
+  .cafe-info {
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .gallery-heading {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .gallery-heading__actions {
+    width: auto;
+  }
+
+  .photo-gallery__item {
+    flex-basis: clamp(280px, 42vw, 380px);
+    height: 260px;
+  }
+
+  .zone-map-card__header {
+    flex-direction: row;
+    align-items: center;
+    padding: 1.75rem 2rem;
+  }
+
+  .zone-map-legend__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* Классическая таблица на планшетах и десктопах */
+  .restriction-panel__head {
+    padding: 1.75rem 2rem;
+    border-bottom: 1px solid var(--wave-line);
+  }
+
+  .restriction-table {
+    display: table;
+  }
+
+  .restriction-table thead {
+    position: static;
+    display: table-header-group;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+  }
+
+  .restriction-table tbody {
+    display: table-row-group;
+    padding: 0;
+  }
+
+  .restriction-table tr,
+  .restriction-table tbody tr {
+    display: table-row;
+    background: transparent;
+    padding: 0;
+  }
+
+  .restriction-table th,
+  .restriction-table td,
+  .restriction-table th[scope="row"] {
+    display: table-cell;
+    padding: 1rem 1.25rem;
+    vertical-align: middle;
+    border-bottom: 1px solid var(--wave-line);
+    font-size: 0.96rem;
+  }
+
+  .restriction-table thead th {
+    color: var(--wave-blue);
+    background: var(--wave-surface-soft);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+  }
+
+  .restriction-table tbody tr:last-child th,
+  .restriction-table tbody tr:last-child td {
+    border-bottom: 0;
+  }
+
+  .restriction-table td::before {
+    display: none;
+    content: none;
+  }
+
+  .visit-panel,
+  .map-frame {
+    min-height: 410px;
+    height: 410px;
+  }
+}
+
+/* 4. Небольшие компьютеры и ноутбуки (от 1024px) */
+@media (min-width: 1024px) {
+  .container {
+    padding-inline: 2rem;
+  }
+
+  .section-space {
+    padding-top: 5rem;
+  }
+
+  /* Десктопная навигация */
+  .navbar-brand--mobile,
+  .navbar-toggler {
+    display: none;
+  }
+
+  .navbar-collapse {
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: auto;
+  }
+
+  .nav-item--cta {
+    margin-top: 0;
+    margin-left: 0.5rem;
+  }
+
+  .nav-item--cta .btn {
+    width: auto;
+  }
+
+  .nav-item--theme {
+    order: 10;
+    margin-left: 0.35rem;
+  }
+
+  .header-search {
+    width: 215px;
+    margin-block: 0;
+    margin-left: 0.35rem;
+  }
+
+  /* Главный экран 2 колонки */
+  .site-hero {
+    padding: 3.75rem 0;
+  }
+
+  .hero-grid {
+    grid-template-columns: 7fr 5fr;
+    gap: 3rem;
+  }
+
+  /* Сетка карточек туров 3 колонки */
+  .cards-grid,
+  .menu-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .catalog-toolbar {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  /* Карта маршрутов с легендой справа */
+  .zone-map-card__body {
+    grid-template-columns: minmax(0, 2.2fr) minmax(290px, 0.85fr);
+    align-items: stretch;
+  }
+
+  .zone-map-legend__list {
+    grid-template-columns: 1fr;
+    max-height: 620px;
+    overflow-y: auto;
+  }
+
+  /* Страница тура 2 колонки */
+  .product-hero-grid {
+    grid-template-columns: 6fr 6fr;
+    gap: 3rem;
+  }
+
+  .product-details-grid {
+    grid-template-columns: 7fr 5fr;
+    gap: 1.5rem;
+    align-items: stretch;
+  }
+
+  .photo-gallery__item {
+    flex-basis: clamp(300px, 31vw, 410px);
+    height: 270px;
+  }
+
+  /* Секция «Как нас найти» 4/8 */
+  .location-grid {
+    grid-template-columns: 4fr 8fr;
+    gap: 1.5rem;
+    align-items: stretch;
+  }
+
+  /* Страница бронирования 5/7 */
+  .order-layout {
+    grid-template-columns: 5fr 7fr;
+    gap: 3rem;
+  }
+
+  .order-form {
+    padding: 2.25rem;
+  }
+
+  .review-slide {
+    padding-right: 6rem;
+  }
+}
+
+/* 5. Широкие экраны (от 1440px) */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1340px;
+  }
+
+  .hero-grid {
+    gap: 4rem;
+  }
+
+  .ticket-card {
+    padding: 1.85rem;
+  }
+
+  .reviews-shell {
+    padding: 2.75rem 3rem;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .gallery-control:hover:not(:disabled) {
+    background: var(--wave-orange);
+    transform: translateY(-1px);
+  }
+
+  .photo-gallery__item:hover img {
+    transform: scale(1.025);
+  }
+
+  .zone-map-card__image-link:hover .zone-map-card__image {
+    transform: scale(1.012);
+  }
+}

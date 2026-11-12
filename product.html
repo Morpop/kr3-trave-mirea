@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Подробная программа гранд-тура «Сердце Байкала и остров Ольхон» от TraveMirea.">
+  <title>Гранд-тур на Байкал: TraveMirea</title>
+  <script>document.documentElement.dataset.theme=localStorage.getItem('travemirea-theme')||'light';</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body id="top">
+  <a class="skip-link" href="#main-content">Перейти к основному содержимому</a>
+
+  <header class="site-header py-3">
+    <div class="container">
+      <div class="site-header__inner d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2">
+        <a class="site-brand text-decoration-none" href="index.html">
+          <img class="site-logo" src="images/trave-logo.svg" alt="" width="48" height="48" aria-hidden="true">
+          TraveMirea
+        </a>
+        <p class="site-header__tagline mb-0 fw-semibold">Туристическое агентство · ежедневно 09:00–21:00</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark site-navbar" aria-label="Основная навигация">
+    <div class="container site-navbar__inner">
+      <a class="navbar-brand navbar-brand--mobile d-lg-none fw-bold" href="index.html">
+        <img class="site-logo site-logo--mobile" src="images/trave-logo.svg" alt="" width="36" height="36" aria-hidden="true">
+        TraveMirea
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" data-nav-toggle aria-controls="mainNavbar" aria-expanded="false" aria-label="Открыть меню">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог туров</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="product.html">Байкал</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacts.html">Офисы и контакты</a></li>
+          <li class="nav-item"><a class="nav-link" href="order.html">Бронирование</a></li>
+          <li class="nav-item nav-item--cta ms-lg-2">
+            <button class="btn btn-wave-light" type="button" data-bs-toggle="modal" data-bs-target="#quickOrderModal" data-modal-open="quickOrderModal">Подобрать тур</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content" tabindex="-1">
+    <div class="container pt-4">
+      <nav aria-label="Хлебные крошки">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="catalog.html">Каталог туров</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Сердце Байкала и Ольхон</li>
+        </ol>
+      </nav>
+    </div>
+
+    <section class="container section-space pt-3" aria-labelledby="product-title">
+      <div class="product-hero-grid">
+        <div>
+          <picture>
+            <source media="(min-width: 1024px)" srcset="images/tour-baikal-1200.jpg 1200w" sizes="600px">
+            <img class="product-image" src="images/tour-baikal-800.jpg" srcset="images/tour-baikal-480.jpg 480w, images/tour-baikal-800.jpg 800w, images/tour-baikal-1200.jpg 1200w" sizes="(max-width: 1023px) 92vw, 600px" alt="Живописное побережье озера Байкал у мыса Бурхан на острове Ольхон" width="1200" height="900">
+          </picture>
+        </div>
+        <div>
+          <h1 id="product-title">Сердце Байкала и Ольхон</h1>
+          <p class="section-lead">Шесть насыщенных дней среди кристальной воды, заповедных бухт, таёжных панорам и уютных отелей без утомительных переездов.</p>
+          <div class="alert alert-wave" role="status">
+            <strong>Условия группы:</strong> до 12 человек в мини-группе, маршрут подходит для семей с детьми от 6 лет.
+          </div>
+          <div class="product-specs-grid">
+            <div>
+              <p class="detail-label mb-1">Длительность</p>
+              <p class="fw-bold mb-0">6 дней / 5 ночей</p>
+            </div>
+            <div>
+              <p class="detail-label mb-1">Проживание</p>
+              <p class="fw-bold mb-0">Эко-отель 4* у озера</p>
+            </div>
+            <div>
+              <p class="detail-label mb-1">Формат</p>
+              <p class="fw-bold mb-0">Всё включено + гид</p>
+            </div>
+            <div>
+              <p class="detail-label mb-1">Стоимость</p>
+              <p class="fw-bold mb-0">от 48 500 ₽ / чел.</p>
+            </div>
+          </div>
+          <div class="hero-actions d-flex flex-column flex-sm-row gap-3">
+            <button class="btn btn-wave-outline btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#quickOrderModal" data-modal-open="quickOrderModal">Оставить заявку</button>
+            <a class="btn btn-wave-primary btn-lg" href="order.html?tour=baikal">Рассчитать и забронировать</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container pb-5" aria-labelledby="program-title">
+      <div class="product-details-grid">
+        <div class="content-panel">
+          <h2 class="h3" id="program-title">Что ждёт в путешествии</h2>
+          <p>Маршрут начинается в Иркутске и проходит через Листвянку, Тажеранские степи и паромную переправу на остров Ольхон. Вы увидите скалу Шаманка на закате, пройдёте на катере к северному мысу Хобой и попробуете блюда байкальской кухни.</p>
+          <p class="mb-0">В стоимость включены все трансферы на комфортабельном микроавтобусе, водные экскурсии, рекреационные сборы нацпарка и проживание в двухместных номерах с панорамными окнами.</p>
+        </div>
+        <div class="content-panel">
+          <h2 class="h3">Программа по дням</h2>
+          <table class="table-wave">
+            <caption class="visually-hidden">Краткое расписание тура Сердце Байкала по дням</caption>
+            <thead>
+              <tr>
+                <th scope="col">День</th>
+                <th scope="col">Ключевая локация</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Дни 1–2</td>
+                <td>Иркутск, Листвянка и нерпинарий</td>
+              </tr>
+              <tr>
+                <td>Дни 3–4</td>
+                <td>Остров Ольхон, мыс Бурхан и Хобой</td>
+              </tr>
+              <tr>
+                <td>Дни 5–6</td>
+                <td>Катер по Малому морю и возвращение</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="container pb-5" aria-labelledby="checklist-title">
+      <div class="content-panel reveal" data-packing-checklist>
+        <div class="checklist-head">
+          <div>
+            <h2 class="h3 mb-1" id="checklist-title">Интерактивный чек-лист путешественника</h2>
+            <p class="section-lead mb-0">Отмечайте вещи по мере сборов в поездку на Байкал — прогресс автоматически сохраняется в браузере.</p>
+          </div>
+          <span class="badge badge-blue" id="checklistProgressText" aria-live="polite">Собрано: 0 из 6 (0%)</span>
+        </div>
+        <div class="checklist-progress-bar" aria-hidden="true">
+          <div class="checklist-progress-bar__fill" id="checklistProgressBar"></div>
+        </div>
+        <div class="checklist-grid" role="group" aria-label="Список вещей в поездку">
+          <label class="checklist-item" for="packDocs">
+            <input class="form-check-input" type="checkbox" id="packDocs" data-pack-item="docs">
+            <span>Паспорт, полис ОМС и ваучер TraveMirea</span>
+          </label>
+          <label class="checklist-item" for="packJacket">
+            <input class="form-check-input" type="checkbox" id="packJacket" data-pack-item="jacket">
+            <span>Ветрозащитная куртка и тёплый флис для катера</span>
+          </label>
+          <label class="checklist-item" for="packShoes">
+            <input class="form-check-input" type="checkbox" id="packShoes" data-pack-item="shoes">
+            <span>Удобные треккинговые кроссовки с нескользящей подошвой</span>
+          </label>
+          <label class="checklist-item" for="packSun">
+            <input class="form-check-input" type="checkbox" id="packSun" data-pack-item="sun">
+            <span>Солнцезащитные очки и крем SPF 50+</span>
+          </label>
+          <label class="checklist-item" for="packPower">
+            <input class="form-check-input" type="checkbox" id="packPower" data-pack-item="power">
+            <span>Внешний аккумулятор (Powerbank) для фото на Ольхоне</span>
+          </label>
+          <label class="checklist-item" for="packThermo">
+            <input class="form-check-input" type="checkbox" id="packThermo" data-pack-item="thermo">
+            <span>Компактный термос или бутылка для воды</span>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <section class="container pb-5" aria-labelledby="restrictions-title">
+      <div class="restriction-panel reveal">
+        <div class="restriction-panel__head">
+          <h2 class="h3 mb-2" id="restrictions-title">Ближайшие заезды и тарифы</h2>
+          <p class="section-lead mb-0">Проверьте доступность мест и условия участия перед оформлением бронирования.</p>
+        </div>
+        <div class="restriction-table-wrap">
+          <table class="restriction-table">
+            <caption class="visually-hidden">Расписание заездов, цены и наличие мест на туры TraveMirea</caption>
+            <thead>
+              <tr>
+                <th scope="col">Маршрут и дата</th>
+                <th scope="col">Длительность</th>
+                <th scope="col">Базовая цена</th>
+                <th scope="col">Статус набора</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Сердце Байкала · 15–20 июня</th>
+                <td data-label="Длительность">6 дней / 5 ночей</td>
+                <td data-label="Базовая цена">48 500 ₽</td>
+                <td data-label="Статус набора"><span class="restriction-status restriction-status--yes">Свободно 6 мест</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Сердце Байкала · 10–15 июля</th>
+                <td data-label="Длительность">6 дней / 5 ночей</td>
+                <td data-label="Базовая цена">51 000 ₽</td>
+                <td data-label="Статус набора"><span class="restriction-status restriction-status--adult">Осталось 3 места</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Золотое кольцо Алтая · 22–28 июля</th>
+                <td data-label="Длительность">7 дней / 6 ночей</td>
+                <td data-label="Базовая цена">54 000 ₽</td>
+                <td data-label="Статус набора"><span class="restriction-status restriction-status--yes">Свободно 8 мест</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Байкальский лёд (зима) · 12–17 февраля</th>
+                <td data-label="Длительность">6 дней / 5 ночей</td>
+                <td data-label="Базовая цена">56 500 ₽</td>
+                <td data-label="Статус набора"><span class="restriction-status restriction-status--adult">Раннее бронирование</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="container pb-5" aria-labelledby="gallery-title" data-photo-gallery-section>
+      <div class="gallery-heading">
+        <div>
+          <h2 id="gallery-title" class="mb-1">Маршруты TraveMirea в деталях</h2>
+          <p class="section-lead mb-0">Листайте фотографии и нажмите на любую карточку, чтобы открыть снимок крупнее.</p>
+        </div>
+        <div class="gallery-heading__actions">
+          <a class="link-wave" href="catalog.html">Смотреть все туры</a>
+          <div class="gallery-controls" aria-label="Управление фотогалереей">
+            <button class="gallery-control" type="button" data-gallery-prev aria-label="Предыдущие фотографии">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6" /></svg>
+            </button>
+            <button class="gallery-control" type="button" data-gallery-next aria-label="Следующие фотографии">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <p class="visually-hidden" id="gallery-keyboard-help">Используйте клавиши со стрелками влево и вправо, чтобы листать фотографии.</p>
+      <div class="photo-gallery reveal" data-photo-gallery tabindex="0" aria-label="Фотографии туров TraveMirea" aria-describedby="gallery-keyboard-help">
+        <button class="photo-gallery__item" type="button" data-gallery-item data-image="images/tour-baikal-1200.jpg" data-title="Остров Ольхон и скала Шаманка" data-alt="Панорама берега Байкала на острове Ольхон" data-caption="Прозрачная вода Малого моря и знаменитые скалистые мысы острова Ольхон." data-label="Остров Ольхон">
+          <img src="images/tour-baikal-800.jpg" srcset="images/tour-baikal-480.jpg 480w, images/tour-baikal-800.jpg 800w" sizes="360px" alt="Панорама берега Байкала на острове Ольхон" width="800" height="480" loading="lazy">
+        </button>
+        <button class="photo-gallery__item" type="button" data-gallery-item data-image="images/tour-altai-1200.jpg" data-title="Долина реки Катунь на Алтае" data-alt="Горные вершины и река Катунь на Алтае" data-caption="Бирюзовые изгибы Катуни и смотровые площадки Чуйского тракта." data-label="Горный Алтай">
+          <img src="images/tour-altai-800.jpg" srcset="images/tour-altai-480.jpg 480w, images/tour-altai-800.jpg 800w" sizes="360px" alt="Горные вершины и река Катунь на Алтае" width="800" height="480" loading="lazy">
+        </button>
+        <button class="photo-gallery__item" type="button" data-gallery-item data-image="images/tour-sochi-1200.jpg" data-title="Побережье Сочи и Красная Поляна" data-alt="Морской берег Сочи на закате" data-caption="Мягкий субтропический климат, пляжный отдых и панорамные подъёмники в горах." data-label="Сочи и море">
+          <img src="images/tour-sochi-800.jpg" srcset="images/tour-sochi-480.jpg 480w, images/tour-sochi-800.jpg 800w" sizes="360px" alt="Морской берег Сочи на закате" width="800" height="480" loading="lazy">
+        </button>
+        <button class="photo-gallery__item" type="button" data-gallery-item data-image="images/tour-karelia-1200.jpg" data-title="Ладожские шхеры Карелии" data-alt="Озёра и хвойный лес Карелии" data-caption="Гранитные острова Ладоги, водопады и мраморный каньон Рускеала." data-label="Шхеры Карелии">
+          <img src="images/tour-karelia-800.jpg" srcset="images/tour-karelia-480.jpg 480w, images/tour-karelia-800.jpg 800w" sizes="360px" alt="Озёра и хвойный лес Карелии" width="800" height="480" loading="lazy">
+        </button>
+        <button class="photo-gallery__item" type="button" data-gallery-item data-image="images/tour-kamchatka-1200.jpg" data-title="Вулканы Камчатки" data-alt="Заснеженный конус вулкана на Камчатке" data-caption="Экспедиционные выезды к домашним вулканам и побережью Тихого океана." data-label="Камчатка">
+          <img src="images/tour-kamchatka-800.jpg" srcset="images/tour-kamchatka-480.jpg 480w, images/tour-kamchatka-800.jpg 800w" sizes="360px" alt="Заснеженный конус вулкана на Камчатке" width="800" height="480" loading="lazy">
+        </button>
+        <button class="photo-gallery__item" type="button" data-gallery-item data-image="images/tour-caucasus-1200.jpg" data-title="Панорамы Приэльбрусья" data-alt="Звёздное небо над заснеженными вершинами Кавказа" data-caption="Высокогорные смотровые площадки, нарзанные источники и гостеприимные долины Кавказа." data-label="Приэльбрусье">
+          <img src="images/tour-caucasus-800.jpg" srcset="images/tour-caucasus-480.jpg 480w, images/tour-caucasus-800.jpg 800w" sizes="360px" alt="Звёздное небо над заснеженными вершинами Кавказа" width="800" height="480" loading="lazy">
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer py-5 mt-5">
+    <div class="container">
+      <div class="row g-4 footer-grid">
+        <div class="col-12 col-md-6 col-lg-4">
+          <a class="footer-brand" href="index.html">TraveMirea</a>
+          <p class="footer-copy mb-0">Туристическое агентство, где насыщенный отдых легко собрать для каждого.</p>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-2 footer-col--center">
+          <h2 class="h5 mb-3">Навигация</h2>
+          <ul class="list-unstyled footer-links mb-0">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог туров</a></li>
+            <li><a href="product.html">Байкал</a></li>
+            <li><a href="order.html">Бронирование</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 footer-col--center">
+          <h2 class="h5 mb-3">Связь</h2>
+          <address class="footer-copy mb-0">
+            <ul class="list-unstyled footer-contact-list mb-0">
+              <li><a href="tel:+74952150778">📞 +7 (495) 215-07-78</a></li>
+              <li>🕒 Ежедневно, 09:00–21:00</li>
+              <li><a href="mailto:hello@travemirea.ru">✉️ hello@travemirea.ru</a></li>
+            </ul>
+          </address>
+        </div>
+        <div class="col-12 col-lg-3 footer-col--center">
+          <h2 class="h5 mb-3">TraveMirea</h2>
+          <p class="footer-copy mb-0">📍 Москва, проспект Вернадского, 78<br>ООО «ТрейвМирэа Тур»<br>Групповые туры и корпоративные выезды — по предварительной заявке</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="quickOrderModal" tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="quickOrderModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-4" id="quickOrderModalTitle">Быстрая заявка на тур</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" data-modal-close aria-label="Закрыть модальное окно"></button>
+        </div>
+        <form class="quick-order-form" novalidate>
+          <div class="modal-body">
+            <p class="mb-3">Оставьте контакты, мы забронируем место в группе и ответим на вопросы по Байкалу.</p>
+            <div class="mb-3">
+              <label class="form-label" for="quickName">Имя</label>
+              <input class="form-control" id="quickName" name="name" autocomplete="name" required>
+              <div class="invalid-feedback">Пожалуйста, укажите ваше имя.</div>
+            </div>
+            <div>
+              <label class="form-label" for="quickEmail">E-mail</label>
+              <input class="form-control" type="email" id="quickEmail" name="email" autocomplete="email" required>
+              <div class="invalid-feedback">Пожалуйста, введите корректный e-mail.</div>
+            </div>
+            <div class="alert alert-success d-none mt-3 mb-0" role="status">Заявка принята. Спасибо! Наш менеджер скоро свяжется с вами.</div>
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-wave-outline" href="order.html">Полная форма</a>
+            <button class="btn btn-wave-primary" type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="photoModal" tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="photoModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog--xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-4" id="photoModalTitle">Фотография маршрута</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" data-modal-close aria-label="Закрыть изображение"></button>
+        </div>
+        <div class="modal-body">
+          <img class="gallery-modal-image" src="images/tour-baikal-1200.jpg" alt="Фотография маршрута TraveMirea" width="1200" height="800">
+          <p class="gallery-modal-caption mb-0 mt-3"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

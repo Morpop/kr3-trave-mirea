@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1200" y2="760" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0786b6"/>
+      <stop offset="55%" stop-color="#00537a"/>
+      <stop offset="100%" stop-color="#013c58"/>
+    </linearGradient>
+    <linearGradient id="land" x1="120" y1="110" x2="1080" y2="660" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#e8f9fd" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#a8e8f9" stop-opacity="0.12"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="760" fill="url(#sky)"/>
+  <!-- Сетка координат -->
+  <g stroke="#a8e8f9" stroke-opacity="0.16" stroke-width="1">
+    <line x1="0" y1="140" x2="1200" y2="140"/>
+    <line x1="0" y1="280" x2="1200" y2="280"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="560" x2="1200" y2="560"/>
+    <line x1="200" y1="0" x2="200" y2="760"/>
+    <line x1="440" y1="0" x2="440" y2="760"/>
+    <line x1="680" y1="0" x2="680" y2="760"/>
+    <line x1="920" y1="0" x2="920" y2="760"/>
+  </g>
+  <!-- Силуэт контура страны -->
+  <path d="M95 360 L155 245 L265 185 L395 215 L520 155 L685 165 L845 130 L1035 165 L1115 265 L1085 415 L985 495 L875 565 L725 605 L560 580 L415 595 L265 555 L155 590 L105 495 Z" fill="url(#land)" stroke="#a8e8f9" stroke-opacity="0.45" stroke-width="3"/>
+  <!-- Маршрутные линии -->
+  <g stroke="#ffd35b" stroke-width="3" stroke-dasharray="9 8" stroke-linecap="round" opacity="0.85">
+    <path d="M235 355 Q205 270 220 205"/>
+    <path d="M235 355 Q190 455 185 545"/>
+    <path d="M235 355 Q380 370 545 485"/>
+    <path d="M545 485 Q655 510 745 490"/>
+    <path d="M745 490 Q915 410 1045 315"/>
+    <path d="M235 355 Q315 305 375 340"/>
+  </g>
+  <!-- Заголовок на карте -->
+  <rect x="44" y="38" width="410" height="76" rx="16" fill="#013c58" fill-opacity="0.82" stroke="#a8e8f9" stroke-opacity="0.35"/>
+  <text x="68" y="72" fill="#ffd35b" font-family="Manrope, Arial, sans-serif" font-size="18" font-weight="800" letter-spacing="1">КАРТА МАРШРУТОВ TRAVEMIREA</text>
+  <text x="68" y="98" fill="#e8f9fd" font-family="Manrope, Arial, sans-serif" font-size="14" font-weight="600">12 ключевых точек отправления и отдыха по России</text>
+
+  <!-- 12 пронумерованных точек -->
+  <!-- 1 Москва (Главный хаб) -->
+  <g transform="translate(235,355)">
+    <circle r="24" fill="#f5a201" stroke="#013c58" stroke-width="4"/>
+    <text y="6" text-anchor="middle" fill="#013c58" font-family="Manrope, Arial, sans-serif" font-size="16" font-weight="800">1</text>
+  </g>
+  <!-- 2 Карелия и Ладога -->
+  <g transform="translate(220,205)">
+    <circle r="21" fill="#ffd35b" stroke="#013c58" stroke-width="3"/>
+    <text y="6" text-anchor="middle" fill="#013c58" font-family="Manrope, Arial, sans-serif" font-size="15" font-weight="800">2</text>
+  </g>
+  <!-- 3 Санкт-Петербург -->
+  <g transform="translate(160,260)">
+    <circle r="21" fill="#ffd35b" stroke="#013c58" stroke-width="3"/>
+    <text y="6" text-anchor="middle" fill="#013c58" font-family="Manrope, Arial, sans-serif" font-size="15" font-weight="800">3</text>
+  </g>
+  <!-- 4 Золотое кольцо -->
+  <g transform="translate(300,320)">
+    <circle r="21" fill="#ffd35b" stroke="#013c58" stroke-width="3"/>
+    <text y="6" text-anchor="middle" fill="#013c58" font-family="Manrope, Arial, sans-serif" font-size="15" font-weight="800">4</text>
+  </g>
+  <!-- 5 Казань и Поволжье -->
+  <g transform="translate(375,340)">
+    <circle r="21" fill="#ffd35b" stroke="#013c58" stroke-width="3"/>
+    <text y="6" text-anchor="middle" fill="#013c58" font-family="Manrope, Arial, sans-serif" font-size="15" font-weight="800">5</text>
+  </g>
+  <!-- 6 Сочи и Красная Поляна -->
+  <g transform="translate(185,545)">
+    <circle r="21" fill="#ffd35b" stroke="#013c58" stroke-width="3"/>
+    <text y="6" text-anchor="middle" fill="#013c58" font-family="Manrope, Arial, sans-serif" font-size="15" font-weight="800">6</text>
+  </g>
+  <!-- 7 Кавказ и Эльбрус -->
+  <g transform="translate(255,565)">
+    <circle r="21" fill="#ffd35b" stroke="#013c58" stroke-width="3"/>
+    <text y="6" text-anchor="middle" fill="#013c58" font-family="Manrope, Arial, sans-serif" font-size="15" font-weight="800">7</text>
+  </g>
+  <!-- 8 Калининград и Балтика -->
+  <g transform="translate(115,320)">
+    <circle r="21" fill="#ffd35b" stroke="#013c58" stroke-width="3"/>
+    <text y="6" text-anchor="middle" fill="#013c58" font-family="Manrope, Arial, sans-serif" font-size="15" font-weight="800">8</text>
+  </g>
+  <!-- 9 Кольский полуостров -->
+  <g transform="translate(275,145)">
+    <circle r="21" fill="#ffd35b" stroke="#013c58" stroke-width="3"/>
+    <text y="6" text-anchor="middle" fill="#013c58" font-family="Manrope, Arial, sans-serif" font-size="15" font-weight="800">9</text>
+  </g>
+  <!-- 10 Горный Алтай -->
+  <g transform="translate(545,485)">
+    <circle r="21" fill="#ffd35b" stroke="#013c58" stroke-width="3"/>
+    <text y="6" text-anchor="middle" fill="#013c58" font-family="Manrope, Arial, sans-serif" font-size="15" font-weight="800">10</text>
+  </g>
+  <!-- 11 Озеро Байкал и Ольхон -->
+  <g transform="translate(745,490)">
+    <circle r="24" fill="#f5a201" stroke="#013c58" stroke-width="4"/>
+    <text y="6" text-anchor="middle" fill="#013c58" font-family="Manrope, Arial, sans-serif" font-size="15" font-weight="800">11</text>
+  </g>
+  <!-- 12 Вулканы Камчатки -->
+  <g transform="translate(1045,315)">
+    <circle r="21" fill="#ffd35b" stroke="#013c58" stroke-width="3"/>
+    <text y="6" text-anchor="middle" fill="#013c58" font-family="Manrope, Arial, sans-serif" font-size="15" font-weight="800">12</text>
+  </g>
+</svg>
